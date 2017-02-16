@@ -17,7 +17,8 @@ import static java.security.AccessController.getContext;
 public class LanguageUtil {
     public static void changeLanguageType(Context context, Locale localelanguage) {
         Log.i("=======", "context = " + context);
-        Resources resources = context.getResources();
+//        Resources resources = context.getResources();
+        Resources resources = App.getContext().getResources();
         DisplayMetrics dm = resources.getDisplayMetrics();
         Configuration config = resources.getConfiguration();
         // 应用用户选择语言
@@ -27,7 +28,8 @@ public class LanguageUtil {
 
     public static Locale getLanguageType(Context context) {
         Log.i("=======", "context = " + context);
-        Resources resources = context.getResources();
+//        Resources resources = context.getResources();
+        Resources resources = App.getContext().getResources();
         DisplayMetrics dm = resources.getDisplayMetrics();
         Configuration config = resources.getConfiguration();
         // 应用用户选择语言
