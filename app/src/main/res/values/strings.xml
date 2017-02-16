@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MultiLanguageDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="test">hi，this is a test!</string>
+</resources>
