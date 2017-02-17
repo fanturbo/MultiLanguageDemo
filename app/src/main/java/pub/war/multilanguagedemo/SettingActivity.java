@@ -19,6 +19,12 @@ public class SettingActivity extends AppCompatActivity {
     private Context mContext;
     private TextView mTv;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        Log.d("======","attachBaseContext");
+        Locale languageType = LanguageUtil.getLanguageType(mContext);
+        super.attachBaseContext(MyContextWrapper.wrap(newBase, languageType));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
